@@ -1,14 +1,11 @@
 @font-face {
   font-family: "jolly";
-  src: url(../src/assets/fonts/Jellee-Roman.woff);
+  src: url(./assets/fonts/Jellee-Roman.woff);
 }
 
 :root {
-  --blue:  #7fc1f0;
-  --pink:  #ffb7c1;
   --cream: #fefdc2;
   --gray:  #e6e6fb;
-  --green: #e6e6fb;
 
   --red:   #e4163d;
   --white: #fdfbec;
@@ -33,6 +30,15 @@ body {
   flex-direction: column;
   gap: 20px;
   padding-bottom: 20px;
+}
+
+
+/* Universal Class */
+.centralized {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -85,6 +91,9 @@ li:hover {
   border: 1px solid black;
   border-radius: 20px;
   background-color: var(--white);
+}
+
+.info-container.menu {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr) );
   gap: 20px;
@@ -93,4 +102,24 @@ li:hover {
 .item {
   height: 200px;
   border: 1px solid black;
+}
+
+.info-container.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cream);
+}
+
+.home {
+  gap: 20px;
+}
+
+.branch-logo {
+  width: min(70%, 500px);
+  border-radius: 20px;
+}
+
+.contain {
+  width: 80%;
 }
