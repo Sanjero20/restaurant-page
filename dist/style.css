@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "jolly";
+  src: url(../src/assets/fonts/Jellee-Roman.woff);
+}
+
+:root {
+  --blue:  #7fc1f0;
+  --pink:  #ffb7c1;
+  --cream: #fefdc2;
+  --gray:  #e6e6fb;
+  --green: #e6e6fb;
+
+  --red:   #e4163d;
+  --white: #fdfbec;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--gray);
+}
+
+#content {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+
+header .container {
+  margin: 0 auto;
+  width: min(80%, 800px);
+  display: flex;
+  justify-content: space-between;
+}
+
+header {
+  height: 70px;
+  background-color: var(--red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  width: 100px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul{
+  list-style-type: none;
+  display: flex;
+  gap: 40px;
+}
+
+nav ul li {
+  font-family: 'jolly', sans-serif;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+li:hover {
+  text-decoration: underline;
+}
+
+.info-container {
+  width: min(80%, 800px);
+  min-height: 75vh;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: var(--white);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr) );
+  gap: 20px;
+}
+
+.item {
+  height: 200px;
+  border: 1px solid black;
+}
