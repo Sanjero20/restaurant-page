@@ -3,7 +3,7 @@ export default function loadHeader() {
 
   // Image Logo
   const img = document.createElement('img'); 
-  img.src = '../src/assets/Jollibee-logo.png';
+  img.src = './assets/Jollibee-logo.png';
   img.classList.add('logo');
 
   // Container 
