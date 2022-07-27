@@ -43,8 +43,8 @@ function createNavBar() {
 
 function createList(text) {
   const li = document.createElement('li');
+  li.setAttribute('id', text.toLowerCase())
   li.textContent = text;
 
   return li;
 }
-
