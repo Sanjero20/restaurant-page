@@ -1,13 +1,13 @@
 @font-face {
   font-family: "jolly";
-  src: url(./assets/fonts/Jellee-Roman.woff);
+  src: url(./assets/Jellee-Roman.woff);
 }
 
 :root {
-  --cream: #fefdc2;
+  --orange: #ffa400;
   --gray:  #e6e6fb;
 
-  --red:   #e4163d;
+  --red:   #d6001c;
   --white: #fdfbec;
 }
 
@@ -21,11 +21,10 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: var(--gray);
 }
 
 #content {
-  height: auto;
+  /* height: 100%; */
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -50,11 +49,12 @@ header .container {
 }
 
 header {
-  height: 70px;
+  height: 60px;
   background-color: var(--red);
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: 3px solid var(--orange);
 }
 
 .logo {
@@ -89,9 +89,8 @@ li:hover {
   min-height: 75vh;
   margin: 0 auto;
   padding: 20px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   border-radius: 20px;
-  background-color: var(--white);
   box-sizing: border-box;
 }
 
@@ -100,7 +99,6 @@ li:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: var(--cream); */
   text-align: center;
 }
 
@@ -127,7 +125,7 @@ li:hover {
 
 .menu-item {
   height: 275px;
-  /* border: 1px solid black; */
+  border: 3px solid var(--orange);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   border-radius: 20px;
   overflow: hidden;
@@ -173,4 +171,9 @@ li:hover {
   width: 80%;
   display: flex;
   justify-content: center;
+}
+
+/* Contact Page */
+.contact-title {
+  font-family: 'jolly', sans-serif;
 }

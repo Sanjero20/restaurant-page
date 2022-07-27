@@ -2,6 +2,7 @@ import clearContent from './pages/clear.js';
 import loadHeader from './pages/header.js';
 import loadHome from './pages/home.js';
 import loadMenu from './pages/menu.js';
+import loadContact from './pages/contact.js';
 
 const content = document.getElementById("content")
 const header = loadHeader();
@@ -13,11 +14,8 @@ main.setAttribute('id', 'main-container')
 content.appendChild(header)
 content.appendChild(main)
 
-// load Display
-// loadHome();
-loadMenu();
-
-
+// Initial Display
+loadHome();
 
 // Event listeners for nav bar
 const homeTab = document.querySelector('#home')
@@ -30,5 +28,11 @@ const menuTab = document.querySelector('#menu')
 menuTab.addEventListener('click', () => {
   clearContent()
   loadMenu()
+})
+
+const contactTab = document.querySelector('#contact')
+contactTab.addEventListener('click', () => {
+  clearContent()
+  loadContact()
 })
 
