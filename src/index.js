@@ -36,3 +36,10 @@ contactTab.addEventListener('click', () => {
   loadContact()
 })
 
+
+//Event listener for dropdown menu
+const dropDown = document.querySelector('.toggle-button')
+const navbar = document.querySelector('nav');
+dropDown.addEventListener('click', () => {
+  navbar.classList.toggle('show')
+})

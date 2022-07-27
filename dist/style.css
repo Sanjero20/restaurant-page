@@ -24,7 +24,6 @@ body {
 }
 
 #content {
-  /* height: 100%; */
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -62,6 +61,7 @@ header {
 }
 
 nav {
+  position: relative;
   display: flex;
   align-items: center;
 }
@@ -85,7 +85,7 @@ li:hover {
 
 /* Contents */
 #main-container {
-  width: min(80%, 800px);
+  width: min(100%, 800px);
   min-height: 75vh;
   margin: 0 auto;
   padding: 20px;
@@ -176,4 +176,58 @@ li:hover {
 /* Contact Page */
 .contact-title {
   font-family: 'jolly', sans-serif;
+}
+
+/* Hamburger Menu */
+.toggle-button {
+  /* background-color: white; */
+  position: absolute;
+  top: .75rem;
+  right: 1.5em;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 30px;
+  opacity: 0;
+  /* pointer-events: none; */
+}
+
+.toggle-button:hover {
+  opacity: 1;
+  cursor: pointer;
+
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 5px 0;
+    height: auto;
+  }
+  header .container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav  {
+    display: none;
+  }
+
+  nav.show {
+    display: block;
+  }
+
+  nav ul{
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .toggle-button {
+    opacity: 1;
+  }
+
+  .menu-item {
+    height: 350px;
+  }
 }

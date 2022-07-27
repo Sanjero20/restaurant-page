@@ -17,6 +17,11 @@ export default function loadHeader() {
   div.appendChild(img)
   div.appendChild(nav);
 
+  // 
+  const burger = createDropDownMenu();
+
+  div.appendChild(burger)
+
   // Append container to header
   header.appendChild(div)
 
@@ -47,4 +52,16 @@ function createList(text) {
   li.textContent = text;
 
   return li;
+}
+
+function createDropDownMenu() {
+  const burger = document.createElement('a')
+  burger.classList.add('toggle-button')
+
+  const burgerImg = document.createElement('img')
+  burgerImg.src = './assets/menu.png'
+
+  burger.appendChild(burgerImg)
+
+  return burger
 }
