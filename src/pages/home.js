@@ -21,5 +21,6 @@ export default function loadHome() {
   div.appendChild(img)
   div.appendChild(p)
 
-  return div;
+  // Append home to main container
+  main.appendChild(div)
 }
